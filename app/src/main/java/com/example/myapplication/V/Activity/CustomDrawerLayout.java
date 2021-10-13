@@ -15,7 +15,9 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.myapplication.P.FileReader;
 import com.example.myapplication.R;
+import com.example.myapplication.V.ConnectGraphview;
 
 
 public class CustomDrawerLayout extends Fragment {
@@ -82,7 +84,7 @@ TextView textView;
 
                 intent=new Intent(Intent.ACTION_GET_CONTENT);
                 intent.setType("*/*");
-                startActivityForResult(intent,1);
+                startActivityForResult(intent,10);
 
             }
         });

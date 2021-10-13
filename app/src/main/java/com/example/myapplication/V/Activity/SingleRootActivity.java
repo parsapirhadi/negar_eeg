@@ -29,6 +29,8 @@ import com.example.myapplication.M.DataType.Counter;
 import com.example.myapplication.R;
 import com.example.myapplication.V.ConnectGraphview;
 import com.jjoe64.graphview.GraphView;
+import com.jjoe64.graphview.series.DataPoint;
+import com.jjoe64.graphview.series.LineGraphSeries;
 
 import java.util.ArrayList;
 import java.util.Set;
@@ -219,11 +221,23 @@ public class SingleRootActivity extends AppCompatActivity {
 
 
         graphView=findViewById(R.id.singlegraphview);
-        ConnectGraphview drawGraphview=new ConnectGraphview(graphView,new Counter());
-        drawGraphview.draw();
+        LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(new DataPoint[]{
+
+                new DataPoint(0, 1),
+                new DataPoint(1, 3),
+                new DataPoint(2, 4),
+                new DataPoint(3, 9),
+                new DataPoint(4, 6),
+                new DataPoint(5, 3),
+                new DataPoint(6, 6),
+                new DataPoint(7, 1),
+                new DataPoint(8, 2)
+        });
 
 
-       // Log.e("333","111111111111");
+        graphView.addSeries(series);
+
+        // Log.e("333","111111111111");
 
 
 

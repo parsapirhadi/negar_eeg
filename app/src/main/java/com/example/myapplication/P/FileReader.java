@@ -20,6 +20,7 @@ public class FileReader {
     Counter counter;
     SetPivotName namePivote;
     SetPivotValue pivotValue;
+    String patch;
 
     public FileReader(String1 string1, Counter counter, SetPivotName namePivote, SetPivotValue pivotValue) {
         this.string1 = string1;
@@ -77,6 +78,8 @@ public class FileReader {
 
         pivotValue.setvalueofeachchannel();
         pivotValue.y();
+
+        Log.e("{{{{{{{{{{{",""+counter.getAll(5));
 
     }
 }

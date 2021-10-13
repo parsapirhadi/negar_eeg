@@ -175,7 +175,8 @@
 
 <LinearLayout
     android:id="@+id/left_linearlayout"
-    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="30dp"
     android:layout_width="40dp"
     android:orientation="vertical"
     android:background="@drawable/main"
@@ -273,8 +274,12 @@
             tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
-
-
+<Button
+    android:layout_width="2dp"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:id="@+id/playline"
+/>
 
     <com.jjoe64.graphview.GraphView
         android:layout_width="0dp"
